@@ -15,7 +15,7 @@ return (df3)
 
 # plot1: plot the histogram to the plot1.png file
 df3<-init()
-png(filename = "plot1.png", width = 480, height = 480,bg = "transparent")
+png(filename = "plot1.png", width = 480, height = 480,bg = "transparent",type="cairo-png")
 hist(as.double(df3$Global_active_power),breaks=12, col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)", ylab="Frequency")
 dev.off()
 

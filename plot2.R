@@ -18,7 +18,8 @@ df3<-init()
 df3$temp<-paste(df3$Date,df3$Time)
 df3$Time2<-strptime(df3$temp,format="%d/%m/%Y %H:%M:%S")
 
-png(filename = "plot2.png", width = 480, height = 480,bg = "transparent" )
+png(filename = "plot2.png", width = 480, height = 480,bg = "transparent", type="cairo-png" )
 plot(df3$Time2,df3$Global_active_power, ylab="Global Active Power (kilowatts)", xlab="",type="n")
 lines(df3$Time2,df3$Global_active_power)
 dev.off()
+

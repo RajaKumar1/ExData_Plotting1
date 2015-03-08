@@ -15,12 +15,12 @@ return (df3)
 #plot 4
 
 doplot<-function(width){
-	df3<-init()
+#	df3<-init()
 	par(lwd=width)
 	temp<-paste(df3$Date,df3$Time)
 	df3$Time2<-strptime(temp,format="%d/%m/%Y %H:%M:%S")
 	
-	png(filename = "plot4.png", width = 480, height = 480,bg = "transparent")
+	png(filename = "plot4.png", width = 480, height = 480,bg = "transparent", type="cairo-png")
 	# set the layout: 2*2 
 	par(mfrow=c(2,2))
 	# plot the top left chart by manually adding the lines to an empty chart, 2 steps

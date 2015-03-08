@@ -15,7 +15,7 @@ return (df3)
 
 #plot3
 df3<-init()
-png(filename = "plot3.png", width = 480, height = 480,bg = "transparent")
+png(filename = "plot3.png", width = 480, height = 480,bg = "transparent",type="cairo-png")
 plot(df3$Time2,df3$Sub_metering_1, ylab="Energy sub metering",xlab="", type="n")
 lines(df3$Time2,df3$Sub_metering_1, col="black")
 lines(df3$Time2,df3$Sub_metering_2, col="red")
