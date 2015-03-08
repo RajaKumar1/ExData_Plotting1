@@ -15,7 +15,7 @@ return (df3)
 #plot 4
 
 doplot<-function(width){
-#	df3<-init()
+	df3<-init()
 	par(lwd=width)
 	temp<-paste(df3$Date,df3$Time)
 	df3$Time2<-strptime(temp,format="%d/%m/%Y %H:%M:%S")
